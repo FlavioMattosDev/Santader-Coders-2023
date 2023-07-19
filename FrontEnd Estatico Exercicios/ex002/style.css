@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	--Blue-Light: #7ebff2;
+	--Blue-Medium: #4a87ec;
+	--Blue-Purple: #7073ec;
+	--Gray: #333333;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -5,4 +14,75 @@ html {
 body {
 	margin: 0;
 	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 1.5rem;
+	border: 1px solid var(--Gray);
+}
+
+.no_border {
+	border: none;
+}
+
+td {
+	text-align: center;
+}
+
+.category {
+	text-align: left;
+	font-weight: bold;
+}
+
+.value_01 {
+	color: #fff;
+	background-color: var(--Blue-Light);
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.value_02 {
+	color: #fff;
+	background-color: var(--Blue-Medium);
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.value_03 {
+	color: #fff;
+	background-color: var(--Blue-Purple);
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+tfoot td {
+	padding: 1.2rem 3rem;
+}
+
+tfoot button {
+	padding: 1rem;
+	width: 100%;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.btn_01 {
+	background-color: var(--Blue-Light);
+}
+.btn_02 {
+	background-color: var(--Blue-Medium);
+}
+.btn_03 {
+	background-color: var(--Blue-Purple);
 }
