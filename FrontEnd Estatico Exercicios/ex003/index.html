@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>José Flávio - Ex 002</title>
+		<title>José Flávio - Ex 003</title>
 		<link
 			rel="shortcut icon"
 			href="https://www.freeiconspng.com/uploads/awesome-face-png-1.png"
@@ -15,9 +15,90 @@
 
 	<body>
 		<!-- Aluno: José Flávio da Rocha Mattos Filho -->
-		<!-- Exercício: 002 -->
+		<!-- Exercício: 003 -->
+
+		<div class="container">
+			<div class="title">Formulário de Cadastro</div>
+			<form action="#">
+				<div class="user_details">
+					<div class="input_box">
+						<label class="details" for="name">Nome Completo</label>
+						<input
+							type="text"
+							placeholder="Digite seu nome"
+							name="name"
+							id="name"
+							required
+						/>
+					</div>
+					<div class="input_box">
+						<label class="details" for="phone-number">Telefone</label>
+						<input
+							type="text"
+							placeholder="Digite seu telefone"
+							name="phone-number"
+							id="phone-number"
+							required
+						/>
+					</div>
+					<div class="input_box">
+						<label class="details" for="birthday"
+							>Data de nascimento</label
+						>
+						<input type="date" name="birthday" id="birthday" required />
+					</div>
+					<div class="input_box">
+						<label class="details" for="age">Idade</label>
+						<input
+							type="number"
+							placeholder="Digite sua idade"
+							name="age"
+							id="age"
+							value="0"
+							required
+						/>
+					</div>
+					<div class="input_box">
+						<label class="details" for="email">Email</label>
+
+						<input
+							type="email"
+							placeholder="Digite seu email"
+							name="email"
+							id="email"
+							required
+						/>
+					</div>
+					<div class="input_box">
+						<label class="details" for="password">Senha</label>
+						<input
+							type="password"
+							placeholder="Digite sua senha"
+							name="password"
+							id="password"
+							required
+						/>
+					</div>
+				</div>
+				<div class="terms">
+					<input
+						type="checkbox"
+						name="terms"
+						id="terms"
+						onclick="verifyCheckbox()"
+						required
+					/>
+					<label class="details" for="terms"
+						>Eu li e concordo com os termos de uso.</label
+					>
+				</div>
+				<button type="submit" id="btn" onclick="exibirAlert()" disabled>
+					Registar
+				</button>
+			</form>
+		</div>
 
 		<!--* Script  -->
-		<script src="script.js"></script>
+		<script src="./script.js"></script>
 	</body>
 </html>
