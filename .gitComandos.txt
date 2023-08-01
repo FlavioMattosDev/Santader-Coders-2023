@@ -1,0 +1,30 @@
+Na pratica:
+git init
+git remote add origin url_repo
+git add *
+git commit -m "comente sua alteração"
+git push origin main
+
+Anotações importantes:
+- Ls (lista de arquivos e pastas)
+- clear ou ctrl+L (limpar o terminal)
+- git config --list (ver todos os dados)
+- cd nomedapasta (para entrar na pasta)
+- cd .. (para voltar 1 pasta)
+- mkdir nomedapasta (criar uma pasta nova)
+- mv nomedoarquivo ./nomedapasta (mover o arquivo de pasta)
+
+git config –global user.name "Flavio Mattos"
+git config –global user.email "flaviom@gmail.com"
+git config --global --unset user.email (para limpar oq foi cadastrado)
+git config --global init.defaultBranch main
+
+git remote add origin url_repo (adicionar repositorio remoto)
+git remote -v (ver qual repositorio remoto esta cadastrado)
+git push origin main (enviar codigo para o repositorio remoto)
+
+git add (staged)
+git add * (staged para todos os arquivos)
+git reset (untracked)
+git commit -m "comente sua alteração" (Unmodified)
+git status

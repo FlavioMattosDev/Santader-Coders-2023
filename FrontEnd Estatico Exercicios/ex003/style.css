@@ -78,6 +78,7 @@ form #btn {
 
 form #btn:hover {
 	filter: brightness(110%);
+	cursor: pointer;
 }
 
 form #btn:disabled {
