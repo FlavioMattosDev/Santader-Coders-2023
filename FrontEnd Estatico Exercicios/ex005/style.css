@@ -1,8 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 html {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
+	padding: 0;
 	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.header_banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	background-color: #4caf50;
+	padding: 2rem;
+	gap: 1.5rem;
+}
+.header_menu {
+	background-color: #eeeeee;
+	padding: 5px;
+}
+
+.header_menu ul,
+li,
+a {
+	text-decoration: none;
+	list-style: none;
+	color: #000;
+	font-weight: 700;
+}
+
+.header_menu ul {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 10px;
+	border: 1px rgba(149, 157, 165, 0.2) solid;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cardapio_card {
+	display: flex;
+	gap: 20px;
+	border-bottom: 1px rgba(149, 157, 165, 0.2) solid;
+	padding: 10px;
+	margin: 20px;
+}
+
+.cardapio__img img {
+	height: 100px;
+	color: #778899;
+}
+
+/* Utilizei gerador de estilo de tabela, apenas para estilizar */
+.tabela_title {
+	margin-top: 40px;
+}
+
+table.minimalistBlack {
+	border: 0px solid #778899;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+table.minimalistBlack td,
+table.minimalistBlack th {
+	border: 1px solid #778899;
+	padding: 6px 10px;
+}
+table.minimalistBlack tbody td {
+	font-size: 13px;
+}
+table.minimalistBlack thead {
+	background: #f1f1f1;
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #f2f2f2 66%, #f1f1f1 100%);
+	background: -webkit-linear-gradient(
+		top,
+		#f4f4f4 0%,
+		#f2f2f2 66%,
+		#f1f1f1 100%
+	);
+	background: linear-gradient(
+		to bottom,
+		#f4f4f4 0%,
+		#f2f2f2 66%,
+		#f1f1f1 100%
+	);
+}
+table.minimalistBlack thead th {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+table.minimalistBlack tfoot td {
+	font-size: 14px;
+}
+
+.wrapper_form {
+	width: 95%;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 10px;
+	border: 1px rgba(149, 157, 165, 0.2) solid;
+	box-shadow: rgba(165, 149, 149, 0.2) 0px 8px 24px;
+}
+
+.user_details {
+	margin: 20px 0 12px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.user_details input {
+	height: 45px;
+	width: 95%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 1rem;
+}
+
+.text_area {
+	width: 95%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 1rem;
+}
+
+.btn {
+	height: 20px;
+	margin: 20px 0;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+.btn:hover {
+	filter: brightness(110%);
+}
+
+.footer {
+	background-color: #4caf50;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 20px;
 }

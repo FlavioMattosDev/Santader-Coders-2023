@@ -24,49 +24,84 @@
 			</div>
 			<nav class="header_menu">
 				<ul>
-					<li><a href="#">Catálogo</a></li>
-					<li><a href="#">Tabela de Preços</a></li>
-					<li><a href="#">Cadastro</a></li>
+					<li><a href="#cardapio">Catálogo</a></li>
+					<li><a href="#preços">Tabela de Preços</a></li>
+					<li><a href="#cadastro">Cadastro</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<section class="cardapio">
-				<h2 class="cardapio_title">Cardápio/Catálogo</h2>
+			<section class="wrapper">
+				<h2 id="cardapio" class="cardapio_title">Cardápio/Catálogo</h2>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 1</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 1</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 1</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 1</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 2</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 2</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 2</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 2</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 3</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 3</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 3</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 3</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 4</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 4</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 4</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 4</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 5</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 5</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 5</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 5</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 6</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 6</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 6</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 6</p>
+					</div>
 				</div>
 				<div class="cardapio_card">
-					<h3 class="cardapio_card__title">Produto 7</h3>
-					<p class="cardapio_card__desc">Descrição do Produto 7</p>
+					<div class="cardapio__img">
+						<img src="./assets/pizza.jpg" alt="" />
+					</div>
+					<div class="cardapio__text">
+						<h3 class="cardapio_card__title">Produto 7</h3>
+						<p class="cardapio_card__desc">Descrição do Produto 7</p>
+					</div>
 				</div>
-			</section>
-			<section>
-				<h2 class="tabela_title">Tabela de Preços</h2>
+
+				<!-- TABELA -->
+				<h2 id="preços" class="tabela_title">Tabela de Preços</h2>
 				<div>
-					<table class="table">
+					<table class="minimalistBlack">
 						<thead>
 							<tr>
 								<th>Produto</th>
@@ -85,38 +120,39 @@
 						</tbody>
 					</table>
 				</div>
-			</section>
-			<section>
-				<h2>Formulário de Cadastro</h2>
-				<div>
+
+				<!-- Formulário -->
+				<div class="wrapper_form">
+					<h2 id="cadastro">Formulário de Cadastro</h2>
 					<div>
-						<label for="nome">Nome:</label>
-						<input type="text" name="nome" id="nome" required />
+						<div class="user_details">
+							<label for="nome">Nome:</label>
+							<input type="text" name="nome" id="nome" required />
+						</div>
+						<div class="user_details">
+							<label for="nome">E-mail:</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="user_details">
+							<label for="nome">Telefone:</label>
+							<input type="tel" name="telefone" id="telefone" required />
+						</div>
+						<div class="user_details">
+							<label>Mensagem:</label>
+							<textarea
+								class="text_area"
+								name="mensagem"
+								id="mensagem"
+								rows="6"
+							></textarea>
+						</div>
+						<button class="btn">Enviar</button>
 					</div>
-					<div>
-						<label for="nome">E-mail:</label>
-						<input type="email" name="email" id="email" required />
-					</div>
-					<div>
-						<label for="nome">Telefone:</label>
-						<input type="tel" name="telefone" id="telefone" required />
-					</div>
-					<div>
-						<label>Mensagem:</label>
-						<textarea
-							name="mensagem"
-							id="mensagem"
-							rows="6"
-							style="width: 26em"
-						></textarea>
-					</div>
-					<button>Enviar</button>
 				</div>
 			</section>
 		</main>
-		<footer></footer>
-
-		<!--* Script  -->
-		<script src="script.js"></script>
+		<footer class="footer">
+			<p>© 2023 Cardápio/Catálogo Digital. Todos os direitos reservados.</p>
+		</footer>
 	</body>
 </html>
