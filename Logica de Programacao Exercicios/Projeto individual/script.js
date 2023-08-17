@@ -50,7 +50,7 @@ function juntarCorpoEmail(cliente) {
 
 // 3. Criar uma função para enviar o e-mail para cada um dos clientes da lista, levando em conta a sua decisão sobre receber comunicações de Email.
 function enviarEmails() {
-	if (ehSegundaFeira()) {
+	if (!ehSegundaFeira()) {
 		console.log("Hoje não é segunda-feira!");
 		return;
 	}
