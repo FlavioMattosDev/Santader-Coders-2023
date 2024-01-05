@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+padding: 50px;
+font-size: 30px;
+}
+
+span{
+	padding: 0 10px;
+}
+
+button {
+	height: 30px;
+	width: 50px;
+}
